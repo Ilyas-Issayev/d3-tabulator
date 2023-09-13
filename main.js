@@ -9,7 +9,7 @@ import { getSecondTable } from './scripts/js/secondTable.js';
 import { getFirstTableDashboard } from './scripts/js/dashboard.js';
 import { parseReviver } from './scripts/js/helpers/tableHelpers.js';
 
-const csvURL = '/analytics/newAnalytic/mainData.csv';
+const csvURL = '/mainData.csv';
 
 const progressBar = document.getElementById('progress');
 
