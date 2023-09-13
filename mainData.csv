@@ -1,40 +1,4 @@
 InvoiceDateChar|TrnBranch|TrnBranchName|TrnSalespersonName|StockCode|TrnProductClassDescription|SaleAmountCDN|CostAmtCDN|ArCustomerName|SupplierName|Series|ArSalesperson
-2020-09-01|ALA|Branch Name ALA|Terry Jones|LLJNWJYEQU|TOOLS|4726473.87|3549590.15|Banks PLC|Webb-Stephens|PREMIUM|OTHER
-2020-09-01|ALA|Branch Name ALA|Patrick Jones|WV3HXSP93X|OTHER|2212729.88|7561922.57|Reed, Bennett and Clark|Sheppard, Ortega and Avila|STANDART|OTHER
-2020-09-01|ALA|Branch Name ALA|Jeffrey Reynolds|MR6FI8WKWE|TOOLS|2661192.64|5772254.84|Rodriguez, Stevens and Thompson|Coleman LLC|OTHER|OTHER
-2020-09-01|AST|Branch Name AST|Daniel Lewis|QN6B8LMJTL|TOOLS|9935602.83|5644711.83|Wood Inc|Ortega-Castillo|STANDART|R81
-2020-09-01|AST|Branch Name AST|Michele George|QN6B8LMJTL|TOOLS|6083944.28|6378095.1|Cochran Group|Lee Group|OTHER|R81
-2020-09-01|AST|Branch Name AST|Kathryn Frazier|LLJNWJYEQU|OTHER|5857803.89|7316504.28|Smith PLC|Cook Inc|OTHER|OTHER
-2020-09-01|SHY|Branch Name SHY|Ricky Smith|AAV2MROXEJ|TILE|8512760.65|5702368.44|Harmon Group|Schultz-Brown|GOLD|OTHER
-2020-09-01|SHY|Branch Name SHY|Dominique George|1E9D46038B|TILE|5528556.08|9614356.31|Reed, Bennett and Clark|Gibson LLC|STANDART|R81
-2020-09-01|SHY|Branch Name SHY|Ashley Waller|5XYP5L5V4C|OTHER|7395044.94|3660232.95|Brown, West and Schneider|Chavez-Ingram|STANDART|R81
-2020-10-01|ALA|Branch Name ALA|Howard Ortega|AAV2MROXEJ|TOOLS|4008020.93|3907710.26|Perkins, Parker and Mckenzie|Knight-Johnson|PREMIUM|R81
-2020-10-01|ALA|Branch Name ALA|Carol Vincent|OOYGU7BF52|TILE|2729479.39|6309657.76|Goodman Inc|Schultz-Brown|GOLD|OTHER
-2020-10-01|ALA|Branch Name ALA|Angel Evans|1E9D46038B|OTHER|2215914.25|4489450.62|Garcia Group|Martinez and Sons|STANDART|R81
-2020-10-01|AST|Branch Name AST|Diana Ellison|QPH4H3PE5L|TILE|5323610.17|9378305.38|Mccarthy Ltd|Young-Johnston|OTHER|R81
-2020-10-01|AST|Branch Name AST|Cassie Farmer|MR6FI8WKWE|TILE|1451245.51|1435503.37|Thomas-Mcguire|Ball-Harmon|GOLD|OTHER
-2020-10-01|AST|Branch Name AST|Mr. Michael Daniels|7YDIMY3UM7|OTHER|9422183.88|6097408.18|Mccarthy Ltd|Gomez, Torres and Walker|OTHER|OTHER
-2020-10-01|SHY|Branch Name SHY|Jacqueline Cooley|PLAPEVDAAA|OTHER|9569381.65|7568989.33|Atkinson, Harrington and Smith|Lee Group|OTHER|OTHER
-2020-10-01|SHY|Branch Name SHY|Michael Sharp|QPH4H3PE5L|TILE|7379876.18|7950784.98|Miller-Douglas|Adams, Smith and Lee|STANDART|OTHER
-2020-10-01|SHY|Branch Name SHY|Kimberly Sims|74EFKTCHN1|TILE|6759204.34|4147515.61|Christian Inc|Martinez and Sons|OTHER|R81
-2020-11-01|ALA|Branch Name ALA|Mr. William Smith PhD|TKQ3DM2XZB|TILE|7606282.68|2413456.32|Patel Inc|Adams, Smith and Lee|STANDART|OTHER
-2020-11-01|ALA|Branch Name ALA|Tammie Walton|QPH4H3PE5L|TILE|9613229.83|3022897.49|Wood, Perez and Garrett|Schultz-Brown|STANDART|R81
-2020-11-01|ALA|Branch Name ALA|Paul Taylor|1E9D46038B|TILE|666327.44|1900287.03|Brown, West and Schneider|Knight-Johnson|OTHER|OTHER
-2020-11-01|AST|Branch Name AST|Wesley Smith|432LHCP8BP|OTHER|2745803.78|2965960.34|Wood, Perez and Garrett|Lamb Ltd|PREMIUM|R81
-2020-11-01|AST|Branch Name AST|Douglas Nicholson|7YDIMY3UM7|TILE|7316276.89|1827614.0|Erickson LLC|Barrett Inc|GOLD|OTHER
-2020-11-01|AST|Branch Name AST|Jennifer Rose|5XYP5L5V4C|TOOLS|8854080.34|5258357.91|Li-Sanford|Sheppard, Ortega and Avila|PREMIUM|OTHER
-2020-11-01|SHY|Branch Name SHY|Carrie Tucker|Q40TF2CRNA|OTHER|3142104.0|9149960.45|Johnson-Scott|Reynolds-Ryan|OTHER|OTHER
-2020-11-01|SHY|Branch Name SHY|Sheena Walker|432LHCP8BP|OTHER|7882964.49|7715682.54|Harvey-Calhoun|Mitchell-Taylor|OTHER|OTHER
-2020-11-01|SHY|Branch Name SHY|Samantha Cortez|LLJNWJYEQU|OTHER|924970.78|564167.76|Smith PLC|Coleman LLC|GOLD|R81
-2020-12-01|ALA|Branch Name ALA|Raymond Bradshaw|1E9D46038B|OTHER|9946106.66|4524922.84|Patterson-Mcdaniel|Adkins, Moore and Davis|PREMIUM|OTHER
-2020-12-01|ALA|Branch Name ALA|Linda Nolan|TKQ3DM2XZB|TILE|6140407.44|6536090.93|Rodriguez, Stevens and Thompson|Barrett Inc|STANDART|OTHER
-2020-12-01|ALA|Branch Name ALA|Hayley Brown|MR6FI8WKWE|OTHER|6876351.97|6296984.19|Brown, West and Schneider|Sheppard, Ortega and Avila|OTHER|OTHER
-2020-12-01|AST|Branch Name AST|Sherry Thomas|SO1BZ5T5DU|TOOLS|4236891.85|8443170.34|Perkins, Parker and Mckenzie|Young-Johnston|STANDART|OTHER
-2020-12-01|AST|Branch Name AST|April Smith|PUKMUDFAAW|TOOLS|9418270.52|8101812.71|Miller-Douglas|Cantu Group|PREMIUM|OTHER
-2020-12-01|AST|Branch Name AST|Kevin Flynn|7YDIMY3UM7|TOOLS|1425529.92|7382848.75|Patterson-Mcdaniel|Gibson LLC|OTHER|OTHER
-2020-12-01|SHY|Branch Name SHY|Matthew Underwood|AAV2MROXEJ|TOOLS|7033341.34|575836.76|Wood, Perez and Garrett|Lamb Ltd|PREMIUM|OTHER
-2020-12-01|SHY|Branch Name SHY|Makayla Young|FEPQIHIOCJ|OTHER|8575014.95|857167.89|Farrell-Taylor|Chavez-Ingram|PREMIUM|R81
-2020-12-01|SHY|Branch Name SHY|Tammy Miller|FEPQIHIOCJ|TILE|967896.82|6407576.66|Potts-Johnson|Lamb Ltd|PREMIUM|R81
 2021-01-01|ALA|Branch Name ALA|Matthew Bauer|AAV2MROXEJ|TILE|3187500.49|4674544.75|Harvey-Calhoun|Coleman LLC|OTHER|R81
 2021-01-01|ALA|Branch Name ALA|Michael Anderson|MR6FI8WKWE|TOOLS|3998167.63|9545119.38|Mccarthy Ltd|Harding Ltd|GOLD|OTHER
 2021-01-01|ALA|Branch Name ALA|Brenda Brown|5XYP5L5V4C|OTHER|5501810.14|6930702.73|Cochran Group|Schultz-Brown|GOLD|OTHER
