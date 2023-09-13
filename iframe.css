@@ -1,0 +1,35 @@
+.menu__btn::before{
+  scale: 2 !important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+  scale: 1.4 !important;
+}
+
+.menu__btn{
+  top: 80px !important;
+  left: 80px !important;
+}
+
+.menu__box{
+  max-width: unset !important;
+  padding: 100px 0 !important;
+}
+
+.menu__box h3{
+  font-size:45px !important;
+  padding: 40px 40px !important;
+  margin-bottom: 15px !important;
+}
+
+.menu__item{
+  font-size: 40px !important;
+}
+
+.menu__box img{
+  margin-top: 40px !important;
+}
+
+.menu__box li{
+  margin-bottom: 20px !important;
+}
