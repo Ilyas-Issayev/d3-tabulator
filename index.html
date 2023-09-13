@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="./styles/tabulator_materialize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.full.min.js"></script>
+
+    <script src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script src="/node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+    <div class="overlay"></div>
+    <!-- <div class="loader">
+        <lottie-player id="loader" autoplay loop mode="normal" style="width: 100px"></lottie-player>
+    </div> -->
+    <div class="main">
+        <!-- <div class="header">
+        </div> -->
+        <div class="main-data">
+            <div class="filterAndDashboard">
+                <div class="filter neuromorphism">
+                    <label for="BranchSalesRep">Select Branch and Sales Reps</label>
+                    <select name="BranchSalesRep" id="BranchSalesRep" filterField="TrnBranchName"
+                        onchange="filterFirstTable(this,'TrnBranchName')">
+                        <option value="">ALL</option>
+                    </select>
+                    <label for="productClass">Select Product Class</label>
+                    <select name="productClass" id="productClass" filterField="TrnProductClassDescription"
+                        onchange="filterFirstTable(this,'TrnProductClassDescription')">
+                        <option value="">ALL</option>
+                    </select>
+                    <label for="Supplier">Select Supplier</label>
+                    <select name="Supplier" id="Supplier" filterField="ArSupplierName"
+                        onchange="filterFirstTable(this,'ArSupplierName')">
+                        <option value="">ALL</option>
+                    </select>
+                    <label for="productCollection">Select Product Collection</label>
+                    <select name="productCollection" id="productCollection" filterField="Series"
+                        onchange="filterFirstTable(this,'Series')">
+                        <option value="">ALL</option>
+                    </select>
+                    <label for="StockCode">Select Stock Code</label>
+                    <select name="StockCode" id="StockCode" filterField="StockCode"
+                        onchange="filterFirstTable(this,'StockCode')">
+                        <option value="">ALL</option>
+                    </select>
+                    <label for="Customer">Select Customer</label>
+                    <select name="Customer" id="Customer" filterField="ArCustomerName"
+                        onchange="filterFirstTable(this,'ArCustomerName')">
+                        <option value="">ALL</option>
+                    </select>
+
+                    <label for="reportrange">Select Daterange</label>
+                    <div id="reportrange" style="   cursor: pointer;
+                                                    border-bottom: 1px solid #ccc;
+                                                    width: 100%;
+                                                    padding: 5px;
+                                                    color: white;">
+                        <i class="fa fa-calendar"></i>&nbsp;
+                        <span></span> <i class="fa fa-caret-down"></i>
+                    </div>
+                    <button class="remove_filters" id="remove_filters" onclick="removeFilters()">
+                        <img src="img/removeFilter.svg">
+                    </button>
+                </div>
+                <div class="right-side">
+                    <div id="example-table3" class="neuromorphism"></div>
+                    <div class="dashboard neuromorphism" id="chart-container">
+                        <div id="dashboard"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-tables">
+                <div class="second neuromorphism" style="height: 310px;">
+                    <div id="example-table"></div>
+                </div>
+                <div class="third neuromorphism" style="height: 310px;">
+                    <div id="example-table2"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

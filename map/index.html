@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Map</title>
+    <link rel="icon"
+        href="https://holten.ca/wp-content/uploads/2020/02/cropped-Holten-Impex-logo-black-favicon-720px-32x32.png"
+        sizes="32x32">
+    <!-- Including Montserrat     -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Including libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script src="../../../ui-components/ui-menu.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="leaflet-providers.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
+    <script src="../../../expire.js"></script>
+    <link rel="stylesheet" src="styles/style.css">
+</head>
+
+<body>
+    <ui-menu></ui-menu>
+
+    <div id="notesPopUp">
+        <div class="heading">
+            <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                <h3>Add Note</h3>
+            </div>
+            <input type="button" value="X" id="closeNotePopUp">
+        </div>
+        <div class="noteTextArea">
+            <textarea id="noteArea"></textarea>
+        </div>
+        <div class="bottomButtons">
+            <input type="button" value="Cancel" id="cancelNoteBtn">
+            <input type="button" value="Add" id="addNoteBtn">
+        </div>
+    </div>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="mainBlock">
+        <div class="filters">
+            <div class="checkboxes" style="margin-bottom: 10px;">
+                <label>
+                    Select sales summary
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="Less than 25k"> Less than 25k
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="25-50k"> 25-50k
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="50-75k"> 50-75k
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="75-100k"> 75-100k
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox" value="Over 100k"> Over 100k
+                </label>
+            </div>
+
+            <div class="salesPersonFilterBlock" style="margin-bottom: 10px;">
+                <label>
+                    Select Sales person filter
+                </label>
+                <select class="salesPersonFilter" id="salesPersonFilter" multiple="multiple">
+                </select>
+            </div>
+
+            <div class="customerNameFilterBlock">
+                <label>
+                    Select Customer name filter
+                </label>
+                <select class="customerNameFilter" id="customerNameFilter" multiple="multiple">
+                </select>
+            </div>
+
+        </div>
+
+        <div class="map" id="map">
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>

@@ -1,0 +1,435 @@
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+    background-color: #fff;
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #fff;
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition-duration: 0.25s;
+}
+
+.menu__btn>span::before {
+    content: "";
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: "";
+    top: 8px;
+}
+
+.menu__box {
+    overflow: scroll;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #303030;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+    z-index: 1000;
+}
+
+#menu__toggle:checked~.menu__item {
+    color: #fff;
+}
+
+#menu__toggle:checked~.menu__btn::before {
+    content: "";
+    width: calc(100% + 40px);
+    height: calc(100% + 32px);
+    position: absolute;
+    top: -28px;
+    left: -20px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.menu__item {
+    display: block;
+    padding: 4px 20px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+    background-color: #cfd8dc;
+    color: black;
+}
+
+.hamburger-menu {
+    z-index: 1000;
+    position: absolute;
+}
+
+.menu__btn::before {
+    content: "";
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
+    position: absolute;
+    top: -28px;
+    left: -16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px #121214, -10px -10px 20px #303036;
+}
+
+.menu__btn {
+    position: fixed;
+    bottom: 40px !important;
+    left: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 450px) {
+    .menu__btn {
+        position: fixed;
+        bottom: unset !important;
+        left: 40px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1001;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu__box {
+        padding: 20px 0;
+    }
+}
+
+/*heading styles*/
+.menu__box h3 {
+    font-size: 20px;
+    line-height: 34px;
+    border-radius: 20px !important;
+    background-color: #202020 !important;
+    color: white !important;
+    box-shadow: 10px 10px 21px #0d0d0d, -10px -10px 21px #333333 !important;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*iconfont styles*/
+.menu__box h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/*list items*/
+.menu__box li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+/*links*/
+.menu__box ul li a:hover {
+    color: black;
+}
+
+/*Lets hide the non active LIs by default*/
+.menu__box ul ul {
+    display: none;
+    background: transparent !important;
+}
+
+.menu__box ul {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 250px;
+    overflow: scroll;
+}
+
+@media screen and (min-height: 850px) {
+    .menu__box ul {
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-height: 450px;
+        overflow: scroll;
+    }
+}
+
+.menu__box li.active ul {
+    display: block;
+}
+
+.menu__box .firstli {
+    margin: 0 15px;
+    color: white !important;
+    border-radius: 20px !important;
+    border: unset !important;
+    border-radius: 20px !important;
+    background-color: #202020 !important;
+    box-shadow: inset 5px 5px 10px #0d0d0d, inset -5px -5px 10px #0d0d0d !important;
+}
+
+.menu__box img {
+    position: absolute;
+    pointer-events: none;
+    width: 40px;
+    right: 25px;
+    margin-top: 8px;
+}
+
+
+
+.custom-cluster-icon {
+    background-color: #ff5733;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+#map {
+    background-color: #191a1a;
+    /* Новый цвет фона карты */
+}
+
+.map {
+    flex: 1;
+    background-color: #303030;
+    width: 100vh;
+    height: 100vh;
+}
+
+.filters {
+    padding: 25px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #404040;
+}
+
+.mainBlock {
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+    height: 30px !important;
+    background: #303030;
+    color: white;
+    outline: none;
+    border: unset;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.select-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options-container {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.options-header {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+    user-select: none;
+}
+
+.options-list {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#progress-bar {
+    width: 50%;
+    height: 30px;
+    background-color: #f0f0f0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 2;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.leaflet-control-attribution.leaflet-control {
+    display: none;
+}
+
+.expand {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.noteArea {
+    flex-direction: column;
+    align-items: center;
+}
+
+.noteArea button {
+    width: 50%;
+    margin-top: 5px;
+}
+
+.noteTextArea textarea {
+    border: 2px solid cornflowerblue;
+    width: 300px;
+    height: 150px;
+}
+
+
+.noteTextArea {
+    padding: 20px;
+}
+
+
+#notesPopUp {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.heading {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+}
+
+.bottomButtons {
+    padding: 10px;
+    background-color: red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.heading input {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #c4c4c4;
+    color: #545454;
+}
+
+#cancelNoteBtn,
+#addNoteBtn {
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    border: 0;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+h3 {
+    margin: 0;
+}
