@@ -349,39 +349,13 @@ export function getFirstTable(allData) {
             { column: "LastYearMonthCalculated", dir: "desc" }
         ]
     });
-    
+
 
     table.on("rowClick", function (e, row) {
         var rowData = row.getData();
         //console.log(rowData)
         if (rowData.level == '1') {
             let filterByClickFirstTable = findObjectsByProperty(groupedFirstTableResult, 'TrnBranchName', rowData.TrnBranchName);
-            let filterByClickSecondTable = findObjectsByProperty(groupedSecondTableResult, 'TrnBranchName', rowData.TrnBranchName);
-
-            let resultFirstTable = getFirstTable(filterByClickFirstTable);
-            let resultSecondTable = getSecondTable(filterByClickSecondTable);
-            updateChart(filterByClickFirstTable);
-        } else if (rowData.level == '2') {
-
-            let filterByClickFirstTable = findObjectsByProperty(groupedFirstTableResult, 'Categories', rowData.TrnBranchName);
-            //let filterByClickSecondTable = findObjectsByProperty(groupedSecondTableResult, 'ArSupplierName', rowData.ArSupplierName);
-
-            let resultFirstTable = getFirstTable(filterByClickFirstTable);
-            //let resultSecondTable = getSecondTable(filterByClickSecondTable);
-            updateChart(filterByClickFirstTable);
-        } else if (rowData.level == '3') {
-            let filterByClickFirstTable = findObjectsByProperty(groupedFirstTableResult, 'TrnSalespersonName', rowData.TrnBranchName);
-            let filterByClickSecondTable = findObjectsByProperty(groupedSecondTableResult, 'TrnSalespersonName', rowData.TrnBranchName);
-
-            let resultFirstTable = getFirstTable(filterByClickFirstTable);
-            let resultSecondTable = getSecondTable(filterByClickSecondTable);
-            updateChart(filterByClickFirstTable);
-        } else if (rowData.level = '4') {
-            let filterByClickFirstTable = findObjectsByProperty(groupedFirstTableResult, 'ArCustomerName', rowData.TrnBranchName);
-            let filterByClickSecondTable = findObjectsByProperty(groupedSecondTableResult, 'ArCustomerName', rowData.TrnBranchName);
-
-            let resultFirstTable = getFirstTable(filterByClickFirstTable);
-            let resultSecondTable = getSecondTable(filterByClickSecondTable);
             updateChart(filterByClickFirstTable);
         }
     });
