@@ -16,7 +16,7 @@ progressBar.style.width = '100%';
 window.onload = function () {
   console.log('450');
 
-  const csvURL = '/analytics/newAnalytic/mainData.csv';
+  const csvURL = '/mainData.csv';
 
   $(function () {
 
